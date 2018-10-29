@@ -7,15 +7,58 @@
 	IN
 	STO	finbase
 
+
+
 return	LDA	section
-	brz	
+#	BRZ	
+#	SUB	one
+#	BRZ	
+
+#	BR	
+
+#Mult function
+mult	LDA	num1
 	SUB	one
+	STO	num1
+	LDA	num2
+	ADD	num2
+	STO	num2
+	LDA	num1
+	BRZ	xmult
+	BR	mult
+xmult	LDA	num2
+	STO	ret
+	BR	return
+#end mult func
 
 
-mult	
-	
+#div function
+div	LDA	num1
+	STO	temp
+divm	LDA	temp
+	SUB	num2
+	STO	temp
+	BRP	addcount
+	LDA	count
+	STO	ret
+	BR	return
+
+addcount	LDA	count
+	ADD	one
+	STO	count
+	BR	div
+
+#end div function
+
+#mod function
 
 
+
+#end mod function
+
+	HLT
+
+#VARIABLES
 
 #used for keeping track of whatever where to return to after func finished
 #for recursion etc a stack is needed rather than a static variable
@@ -23,10 +66,13 @@ section	DAT	0
 
 
 
-#Func Passing vars
+#Func vars
 num1	DAT
 num2	DAT
+count	DAT
+temp	DAT
 ret	DAT
+
 
 #input vars
 inp	DAT
@@ -36,3 +82,7 @@ finbase	DAT
 
 one	DAT	1
 zero	DAT	0
+
+
+
+
