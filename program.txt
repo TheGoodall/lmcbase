@@ -7,14 +7,30 @@
 	IN
 	STO	finbase
 
+	
+	LDA	orgbase
+	STO	num1
+	STO	num2
+	LDA 	basesqref
+	STO	section
+	BR	mult
+basesqm	LDA	ret
+	STO	basesq
 
+	STO	num1
+	LDA	orgbase
+	STO	num2
+	LDA 	basecbref
+	STO	section
+	BR	mult
+basecbm	LDA	ret
+	STO	basecb
 
 return	LDA	section
-#	BRZ	
-#	SUB	one
-#	BRZ	
-
-#	BR	
+	BRZ	basesqm
+	SUB	one
+	BRZ	basecbm
+	
 
 #Mult function
 mult	LDA	num1
@@ -52,8 +68,16 @@ addcount	LDA	count
 
 #mod function
 
-
-
+mod	LDA	num1
+	STO	temp
+modm	LDA	temp
+	SUB	num2
+	STO	temp
+	BRP	modm
+	LDA	temp
+	ADD	num2
+	STO	ret
+	BR	return
 #end mod function
 
 	HLT
@@ -79,9 +103,20 @@ inp	DAT
 orgbase	DAT
 finbase	DAT
 
+basesq	DAT
+basecb	DAT
+
 
 one	DAT	1
 zero	DAT	0
+
+basesqref	DAT	0
+basecbref	DAT	1
+
+nineninenine	DAT	999
+
+
+
 
 
 
