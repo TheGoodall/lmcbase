@@ -1,15 +1,5 @@
-# Enter assembler code here
-#
-# To add comments begin lines with #
-# Code lines have 3 entries separated by tabs
-# > First an optional label,
-# > second an instruction mnemonic, and 
-# > third an address label if required.
-#
-# Valid mnemonics are:
 # HLT, ADD, SUB, STO, LDA,
 # BR, BRZ, BRP, IN, OUT, DAT
-
 	IN
 	STO	inp
 	IN
@@ -17,9 +7,32 @@
 	IN
 	STO	finbase
 
+return	LDA	section
+	brz	
+	SUB	one
+
+
+mult	
+	
 
 
 
+#used for keeping track of whatever where to return to after func finished
+#for recursion etc a stack is needed rather than a static variable
+section	DAT	0
+
+
+
+#Func Passing vars
+num1	DAT
+num2	DAT
+ret	DAT
+
+#input vars
 inp	DAT
 orgbase	DAT
 finbase	DAT
+
+
+one	DAT	1
+zero	DAT	0
