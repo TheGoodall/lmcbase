@@ -9,3 +9,17 @@
 # Valid mnemonics are:
 # HLT, ADD, SUB, STO, LDA,
 # BR, BRZ, BRP, IN, OUT, DAT
+
+	IN
+	STO	inp
+	IN
+	STO	orgbase
+	IN
+	STO	finbase
+
+
+
+
+inp	DAT
+orgbase	DAT
+finbase	DAT
