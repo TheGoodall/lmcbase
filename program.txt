@@ -2,9 +2,51 @@
 # BR, BRZ, BRP, IN, OUT, DAT
 	IN
 	STO	inp
+	STO	temp
 	IN
 	STO	orgbase
 	IN
 	STO	finbase
-
 	
+	LDA	hun
+	STO	subval
+
+
+digloop	LDA	count
+	ADD	one
+	STO	count
+	LDA	temp
+	SUB	subval
+	STO	temp
+	BRP	digloop
+	LDA	count
+	SUB	one
+	STO	hundig
+	
+	LDA	magval
+	SUB	one
+	BRZ	maghun
+
+maghun	
+	
+		
+zero	HLT
+one	DAT	1
+ten	DAT	10
+hun	DAT	100
+
+hundig	DAT
+tendig	DAT
+untdig	DAT
+
+magval	DAT	2
+
+count	DAT
+subval	DAT
+
+
+temp	DAT
+
+inp	DAT
+orgbase	DAT
+finbase	DAT	
