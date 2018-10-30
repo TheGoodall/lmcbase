@@ -25,6 +25,11 @@ basesqm	LDA	ret
 	BR	mult
 basecbm	LDA	ret
 	STO	basecb
+	
+	LDA	inp
+	STO	num1
+	LDA	ten
+
 
 return	LDA	section
 	BRZ	basesqm
@@ -108,6 +113,7 @@ basecb	DAT
 
 
 one	DAT	1
+ten	DAT	10
 zero	DAT	0
 
 basesqref	DAT	0
