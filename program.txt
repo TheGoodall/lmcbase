@@ -29,7 +29,8 @@ basecbm	LDA	ret
 	LDA	inp
 	STO	num1
 	LDA	ten
-
+	STO	num2
+	LDA	
 
 return	LDA	section
 	BRZ	basesqm
