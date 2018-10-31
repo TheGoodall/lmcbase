@@ -11,8 +11,11 @@
 	LDA	hun
 	STO	subval
 
+	LDA	zero
+	STO	count
 
-digloop	LDA	count
+
+hunloop	LDA	count
 	ADD	one
 	STO	count
 	LDA	temp
@@ -22,12 +25,26 @@ digloop	LDA	count
 	LDA	count
 	SUB	one
 	STO	hundig
-	
-	LDA	magval
-	SUB	one
-	BRZ	maghun
 
-maghun	
+	LDA	zero
+	STO	count
+
+	LDA	ten
+	STO	subval
+	
+	
+
+tenloop	LDA	count
+	ADD	one
+	STO	count
+	LDA	temp
+	SUB	subval
+	STO	temp
+	BRP	tenloop
+	LDA	count
+	SUB	one
+		
+	
 	
 		
 zero	HLT
@@ -46,6 +63,10 @@ subval	DAT
 
 
 temp	DAT
+
+nineninenine	DAT	999
+
+subcount	DAT	0
 
 inp	DAT
 orgbase	DAT
