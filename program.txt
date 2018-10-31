@@ -15,7 +15,7 @@
 	STO	count
 
 
-hunloop	LDA	count
+digloop	LDA	count
 	ADD	one
 	STO	count
 	LDA	temp
@@ -25,12 +25,20 @@ hunloop	LDA	count
 	LDA	count
 	SUB	one
 	STO	hundig
+	LDA	temp
+	ADD	subval
+	STO	inp
 
 	LDA	zero
 	STO	count
 
 	LDA	ten
 	STO	subval
+
+	LDA	magval
+	SUB	one
+	BRZ	
+	BR	digloop
 	
 	
 
