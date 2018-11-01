@@ -16,6 +16,7 @@
 	STO	hundreds
 	STO	tens
 	STO	units
+	STO	outputbool
 
 
 ####################		SEPERATING DIGITS
@@ -41,22 +42,64 @@ stten	LDA	temp
 	BRP	subten
 	LDA	temp
 	STO	units
+	LDA	outputbool
+	BRZ	conv
+
+################### OUTPUT
 
 
-###################
+output	
 
+###################  CONVERTING TO BASE 10
 
+conv	LDA	a
+	SUB	ten
+	BRZ	next
 
+addhun	LDA	hundreds
+	BRZ	addten
+	SUB	one
+	STO	hundreds
+	LDA	tens
+	ADD	a
+	STO	tens
+	BR	addhun
+
+addten	LDA	tens
+	BRZ	next
+	SUB	one
+	STO	tens
+	LDA	units
+	ADD	a
+	STO	units
+	BR	addten
+
+next	LDA	units
+	STO	n
+	STO	temp
+	LDA	b
+	SUB	ten
+	BRZ	output
+	
+# basically, i got to here and then realised that 
+#the code for seperating digits works for this
+#part as well, so i reused it in an effort
+#to save mailboxes
 
 ###################		VARIABLES
+
+
+zero	DAT	000
+one	DAT	001
+ten	DAT	010
+hun	DAT	100
+
 
 hundreds	DAT	
 tens	DAT
 units	DAT
 
-hunout	DAT
-tenout	DAT
-unout	DAT
+outputbool	DAT	0
 
 n	DAT
 a	DAT
@@ -65,6 +108,8 @@ b	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
 
 
 
