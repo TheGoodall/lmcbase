@@ -27,8 +27,8 @@ subhun	STO 	temp
 	LDA	hundreds
 	ADD	one
 	STO	hundreds
-	SUB	nine
-	BRP	error
+#	SUB	nine
+#	BRP	error
 sthun	LDA	temp
 	SUB	hun
 	BRP	subhun
@@ -61,8 +61,8 @@ output	LDA	hundreds
 zero	DAT	000
 ##################		ERROR
 
-error	LDA	nnn
-	OUT
+#error	LDA	nnn
+#	OUT
 one	DAT	001
 
 
@@ -100,55 +100,53 @@ addten	LDA	tens
 ###################	PREPARING TO CONVERT TO BASE B
 
 
+
+
+
+
+
+
+
 next	LDA	units
 	STO	n
-	OUT
+	STO	temp
+
+	LDA	b
+	SUB	ten
+	BRZ	output
+
+	LDA	one
+	STO	outputbool
+
+	LDA	zero
+	STO	hun
+	STO	hundreds
+	STO	tens
+	STO	units
+
+	LDA	b
+	STO	a
+	STO	ten
+loop	LDA	a
+	BRZ	exitloop
+	SUB	one
+	STO	a
+	LDA	hun
+	ADD	b
+	STO	hun
+		
+exitloop	LDA	b
+	STO	ten
+
+	BR	subhun
+	
 
 
-
-
-
-#
-#next	LDA	units
-#	STO	n
-#	STO	temp
-#
-#	LDA	b
-#	SUB	ten
-#	BRZ	output
-#
-#	LDA	one
-#	STO	outputbool
-#
-#	LDA	zero
-#	STO	hun
-#	STO	hundreds
-#	STO	tens
-#	STO	units
-#
-#	LDA	b
-#	STO	a
-#	STO	ten
-#loop	LDA	a
-#	BRZ	exitloop
-#	SUB	one
-#	STO	a
-#	LDA	hun
-#	ADD	b
-#	STO	hun
-#		
-#exitloop	LDA	b
-#	STO	ten
-#
-#	BR	subhun
-#	
-#
-#
 ###################		VARIABLES
 
 
 
-nine	DAT	009
+#nine	DAT	009
 ten	DAT	010
 hun	DAT	100
 
@@ -165,7 +163,8 @@ b	DAT
 
 temp	DAT
 
-nnn	DAT	999
+#nnn	DAT	999
+
 
 
 
