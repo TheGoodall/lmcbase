@@ -1,2 +1,40 @@
 # HLT, ADD, SUB, STO, LDA,
 # BR, BRZ, BRP, IN, OUT, DAT
+
+	IN
+	STO	n
+	STO	temp
+	IN
+	STO	a
+	IN
+	STO	b
+
+subhun	STO 	temp
+	SUB	hun
+	BRP	subhun
+	LDA	temp
+	STO	tens
+	LDA	n
+	SUB	tens
+	STO	hundreds
+	
+
+
+
+
+zero	DAT	000
+
+hun	DAT	100
+ten	DAT 	010
+
+hundreds	DAT	
+tens	DAT
+units	DAT
+
+n	DAT
+a	DAT
+b	DAT
+
+temp	DAT
+
+nnn	DAT	999
