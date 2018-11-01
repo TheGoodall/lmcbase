@@ -1,6 +1,9 @@
 # HLT, ADD, SUB, STO, LDA,
 # BR, BRZ, BRP, IN, OUT, DAT
 
+
+####################		TAKING INPUTS AND RESETTING VALUES
+
 	IN
 	STO	n
 	STO	temp
@@ -13,6 +16,10 @@
 	STO	hundreds
 	STO	tens
 	STO	units
+
+
+####################		SEPERATING DIGITS
+
 
 	BR	sthun
 
@@ -35,20 +42,13 @@ stten	LDA	temp
 	LDA	temp
 	STO	units
 
-	LDA	hundreds
-	OUT
-	LDA	tens
-	OUT
-	LDA	units
-	OUT
 
-	
+###################
 
 
-zero	DAT	000
-one	DAT	001
-hun	DAT	100
-ten	DAT 	010
+
+
+###################		VARIABLES
 
 hundreds	DAT	
 tens	DAT
