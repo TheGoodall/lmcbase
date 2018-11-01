@@ -17,17 +17,18 @@
 	STO	tens
 	STO	units
 	STO	outputbool
+	BR	sthun
 
 
 ####################		SEPERATING DIGITS
 
 
-	BR	sthun
-
 subhun	STO 	temp
 	LDA	hundreds
 	ADD	one
 	STO	hundreds
+	SUB	nine
+	BRP	error
 sthun	LDA	temp
 	SUB	hun
 	BRP	subhun
@@ -42,15 +43,33 @@ stten	LDA	temp
 	BRP	subten
 	LDA	temp
 	STO	units
+
+
 	LDA	outputbool
+
 	BRZ	conv
 
 ################### OUTPUT
 
 
-output	
+output	LDA	hundreds
+	OUT
+	LDA	tens
+	OUT
+	LDA	units
+	OUT
+zero	DAT	000
+##################		ERROR
+
+error	LDA	nnn
+	OUT
+one	DAT	001
+
 
 ###################  CONVERTING TO BASE 10
+
+
+
 
 conv	LDA	a
 	SUB	ten
@@ -74,23 +93,62 @@ addten	LDA	tens
 	STO	units
 	BR	addten
 
-next	LDA	units
-	STO	n
-	STO	temp
-	LDA	b
-	SUB	ten
-	BRZ	output
-	
 # basically, i got to here and then realised that 
 #the code for seperating digits works for this
 #part as well, so i reused it in an effort
 #to save mailboxes
+###################	PREPARING TO CONVERT TO BASE B
 
+
+next	LDA	units
+	STO	n
+	OUT
+
+
+
+
+
+#
+#next	LDA	units
+#	STO	n
+#	STO	temp
+#
+#	LDA	b
+#	SUB	ten
+#	BRZ	output
+#
+#	LDA	one
+#	STO	outputbool
+#
+#	LDA	zero
+#	STO	hun
+#	STO	hundreds
+#	STO	tens
+#	STO	units
+#
+#	LDA	b
+#	STO	a
+#	STO	ten
+#loop	LDA	a
+#	BRZ	exitloop
+#	SUB	one
+#	STO	a
+#	LDA	hun
+#	ADD	b
+#	STO	hun
+#		
+#exitloop	LDA	b
+#	STO	ten
+#
+#	BR	subhun
+#	
+#
+#
 ###################		VARIABLES
 
 
-zero	DAT	000
-one	DAT	001
+
+nine	DAT	009
 ten	DAT	010
 hun	DAT	100
 
@@ -108,6 +166,20 @@ b	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
