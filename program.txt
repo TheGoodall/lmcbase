@@ -9,27 +9,54 @@
 	IN
 	STO	b
 
+	LDA	zero
+	STO	hundreds
+	STO	tens
+	STO	units
+
+	BR	sthun
+
 subhun	STO 	temp
+	LDA	hundreds
+	ADD	one
+	STO	hundreds
+sthun	LDA	temp
 	SUB	hun
 	BRP	subhun
-	LDA	temp
+	BR	stten
+
+subten	STO 	temp
+	LDA	tens
+	ADD	one
 	STO	tens
-	LDA	n
-	SUB	tens
-	STO	hundreds
+stten	LDA	temp
+	SUB	ten
+	BRP	subten
+	LDA	temp
+	STO	units
+
+	LDA	hundreds
+	OUT
+	LDA	tens
+	OUT
+	LDA	units
+	OUT
+
 	
 
 
-
-
 zero	DAT	000
-
+one	DAT	001
 hun	DAT	100
 ten	DAT 	010
 
 hundreds	DAT	
 tens	DAT
 units	DAT
+
+hunout	DAT
+tenout	DAT
+unout	DAT
 
 n	DAT
 a	DAT
@@ -38,3 +65,9 @@ b	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
+
