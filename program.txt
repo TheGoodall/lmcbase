@@ -46,12 +46,6 @@ stten	LDA	temp
 ###################  CONVERTING TO BASE 10
 
 
-
-
-conv	LDA	a
-	SUB	ten
-	BRZ	next
-
 addhun	LDA	hundreds
 	BRZ	addten
 	SUB	one
@@ -72,29 +66,28 @@ addten	LDA	tens
 
 ###################	CONVERT FROM 10 TO B
 
+###### find b^2
 
-next	LDA	units
-
-## find b^2
-
-	LDA	b
+next	LDA	b
 	STO	temp
 	SUB	one
 	STO	count
+	LDA	zero
+	STO	n
 
-	LDA	count
+bsqcalc	LDA	count
 	BRZ	tob
 	SUB	one
 	STO	count
 	LDA	temp
 	ADD	b
 	STO	temp
-	BR	bsq
+	BR	bsqcalc
 
 tob	LDA	temp
 	STO	bsq
 	BR	stbsq
-	
+######	
 subbsq	STO 	units
 	LDA	n
 	ADD	hun
@@ -102,16 +95,17 @@ subbsq	STO 	units
 stbsq	LDA	units
 	SUB	bsq
 	BRP	subbsq
-	BR	stten
+	BR	stb
 
 subb	STO 	units
 	LDA	n
 	ADD	ten
 	STO	n
-stten	LDA	units
+stb	LDA	units
 	SUB	b
 	BRP	subb
 	LDA	units
+	ADD	n
 	OUT
 
 zero	DAT	000
@@ -144,6 +138,12 @@ bsq	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
+
 
 
 
