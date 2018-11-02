@@ -74,21 +74,46 @@ addten	LDA	tens
 
 
 next	LDA	units
-	STO	n
+
+## find b^2
+
+	LDA	b
 	STO	temp
+	SUB	one
+	STO	count
 
+	LDA	count
+	BRZ	tob
+	SUB	one
+	STO	count
+	LDA	temp
+	ADD	b
+	STO	temp
+	BR	bsq
+
+tob	LDA	temp
+	STO	bsq
+	BR	stbsq
 	
+subbsq	STO 	units
+	LDA	n
+	ADD	hun
+	STO	n
+stbsq	LDA	units
+	SUB	bsq
+	BRP	subbsq
+	BR	stten
 
-
-################### OUTPUT
-
-
-output	LDA	hundreds
-	OUT
-	LDA	tens
-	OUT
+subb	STO 	units
+	LDA	n
+	ADD	ten
+	STO	n
+stten	LDA	units
+	SUB	b
+	BRP	subb
 	LDA	units
 	OUT
+
 zero	DAT	000
 ##################		ERROR
 
@@ -106,7 +131,7 @@ nine	DAT	009
 ten	DAT	010
 hun	DAT	100
 
-
+count	DAT	0
 hundreds	DAT	
 tens	DAT
 units	DAT
@@ -115,9 +140,15 @@ n	DAT
 a	DAT
 b	DAT
 
+bsq	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
 
 
 
