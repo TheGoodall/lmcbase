@@ -2,6 +2,10 @@
 # BR, BRZ, BRP, IN, OUT, DAT
 
 
+# Design choices:
+
+#1. 
+
 ####################		TAKING INPUTS AND RESETTING VALUES
 
 	IN
@@ -9,8 +13,7 @@
 	STO	temp
 	IN
 	STO	a
-	IN
-	STO	b
+
 
 	LDA	zero
 	STO	hundreds
@@ -67,8 +70,8 @@ addten	LDA	tens
 ###################	CONVERT FROM 10 TO B
 
 ###### find b^2
-
-next	LDA	b
+	IN
+next	STO	b
 	STO	temp
 	SUB	one
 	STO	count
@@ -87,10 +90,13 @@ bsqcalc	LDA	count
 tob	LDA	temp
 	STO	bsq
 	BR	stbsq
-######	
+
+#### Actual conversion
+
 subbsq	STO 	units
 	LDA	n
 	ADD	hun
+	BRZ	error
 	STO	n
 stbsq	LDA	units
 	SUB	bsq
@@ -138,41 +144,4 @@ bsq	DAT
 temp	DAT
 
 nnn	DAT	999
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
