@@ -4,21 +4,21 @@
 
 # Design choices:
 
-#1. 
+#1. Due to mailbox shortages, I will asume that the inputs are valid, in the base that they claim to be, however I will not assume that they are convertable by my program
 
 ####################		TAKING INPUTS AND RESETTING VALUES
 
-	IN
-	STO	n
+	IN #n
+
 	STO	temp
-	IN
-	STO	a
+
 
 
 	LDA	zero
 	STO	hundreds
 	STO	tens
 	STO	units
+	STO	n
 	BR	sthun
 
 
@@ -43,10 +43,11 @@ stten	LDA	temp
 	BRP	subten
 	LDA	temp
 	STO	units
-
-
+	
 
 ###################  CONVERTING TO BASE 10
+	IN #a
+	STO	temp
 
 
 addhun	LDA	hundreds
@@ -54,7 +55,7 @@ addhun	LDA	hundreds
 	SUB	one
 	STO	hundreds
 	LDA	tens
-	ADD	a
+	ADD	temp
 	STO	tens
 	BR	addhun
 
@@ -63,23 +64,26 @@ addten	LDA	tens
 	SUB	one
 	STO	tens
 	LDA	units
-	ADD	a
+	ADD	temp
+	STO	b
+	SUB	units
+	BRP	addtencont
+	BR	error
+addtencont	LDA	b
 	STO	units
 	BR	addten
 
 ###################	CONVERT FROM 10 TO B
 
 ###### find b^2
-	IN
-next	STO	b
+next	IN #b
+	STO	b
 	STO	temp
 	SUB	one
 	STO	count
-	LDA	zero
-	STO	n
 
 bsqcalc	LDA	count
-	BRZ	tob
+	BRZ	stbsq
 	SUB	one
 	STO	count
 	LDA	temp
@@ -87,19 +91,19 @@ bsqcalc	LDA	count
 	STO	temp
 	BR	bsqcalc
 
-tob	LDA	temp
-	STO	bsq
-	BR	stbsq
-
 #### Actual conversion
 
 subbsq	STO 	units
 	LDA	n
 	ADD	hun
-	BRZ	error
 	STO	n
+	LDA	count
+	ADD	one
+	STO	count
+	SUB	b
+	BRZ	error
 stbsq	LDA	units
-	SUB	bsq
+	SUB	temp
 	BRP	subbsq
 	BR	stb
 
@@ -137,11 +141,27 @@ tens	DAT
 units	DAT
 
 n	DAT
-a	DAT
 b	DAT
 
-bsq	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
