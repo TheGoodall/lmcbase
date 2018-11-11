@@ -2,21 +2,23 @@
 # BR, BRZ, BRP, IN, OUT, DAT
 
 
+# Design choices:
+
+#1. Due to mailbox shortages, I will asume that the inputs are valid, in the base that they claim to be, however I will not assume that they are convertable by my program
+
 ####################		TAKING INPUTS AND RESETTING VALUES
 
-	IN
-	STO	n
+	IN #n
+
 	STO	temp
-	IN
-	STO	a
-	IN
-	STO	b
+
+
 
 	LDA	zero
 	STO	hundreds
 	STO	tens
 	STO	units
-	STO	outputbool
+	STO	n
 	BR	sthun
 
 
@@ -27,8 +29,6 @@ subhun	STO 	temp
 	LDA	hundreds
 	ADD	one
 	STO	hundreds
-	SUB	nine
-	BRP	error
 sthun	LDA	temp
 	SUB	hun
 	BRP	subhun
@@ -43,44 +43,19 @@ stten	LDA	temp
 	BRP	subten
 	LDA	temp
 	STO	units
-
-
-	LDA	outputbool
-
-	BRZ	conv
-
-################### OUTPUT
-
-
-output	LDA	hundreds
-	OUT
-	LDA	tens
-	OUT
-	LDA	units
-	OUT
-zero	DAT	000
-##################		ERROR
-
-error	LDA	nnn
-	OUT
-one	DAT	001
-
+	
 
 ###################  CONVERTING TO BASE 10
+	IN #a
+	STO	temp
 
-
-
-
-conv	LDA	a
-	SUB	ten
-	BRZ	next
 
 addhun	LDA	hundreds
 	BRZ	addten
 	SUB	one
 	STO	hundreds
 	LDA	tens
-	ADD	a
+	ADD	temp
 	STO	tens
 	BR	addhun
 
@@ -89,61 +64,69 @@ addten	LDA	tens
 	SUB	one
 	STO	tens
 	LDA	units
-	ADD	a
+	ADD	temp
+	STO	b
+	SUB	units
+	BRP	addtencont
+	BR	error
+addtencont	LDA	b
 	STO	units
 	BR	addten
 
-# basically, i got to here and then realised that 
-#the code for seperating digits works for this
-#part as well, so i reused it in an effort
-#to save mailboxes
-###################	PREPARING TO CONVERT TO BASE B
+###################	CONVERT FROM 10 TO B
 
+###### find b^2
+next	IN #b
+	STO	b
+	STO	temp
+	SUB	one
+	STO	count
 
-next	LDA	units
+bsqcalc	LDA	count
+	BRZ	stbsq
+	SUB	one
+	STO	count
+	LDA	temp
+	ADD	b
+	STO	temp
+	BR	bsqcalc
+
+#### Actual conversion
+
+subbsq	STO 	units
+	LDA	n
+	ADD	hun
 	STO	n
+	LDA	count
+	ADD	one
+	STO	count
+	SUB	b
+	BRZ	error
+stbsq	LDA	units
+	SUB	temp
+	BRP	subbsq
+	BR	stb
+
+subb	STO 	units
+	LDA	n
+	ADD	ten
+	STO	n
+stb	LDA	units
+	SUB	b
+	BRP	subb
+	LDA	units
+	ADD	n
 	OUT
 
+zero	DAT	000
+##################		ERROR
+
+error	LDA	nnn
+	OUT
+one	DAT	001
+	
 
 
-
-
-#
-#next	LDA	units
-#	STO	n
-#	STO	temp
-#
-#	LDA	b
-#	SUB	ten
-#	BRZ	output
-#
-#	LDA	one
-#	STO	outputbool
-#
-#	LDA	zero
-#	STO	hun
-#	STO	hundreds
-#	STO	tens
-#	STO	units
-#
-#	LDA	b
-#	STO	a
-#	STO	ten
-#loop	LDA	a
-#	BRZ	exitloop
-#	SUB	one
-#	STO	a
-#	LDA	hun
-#	ADD	b
-#	STO	hun
-#		
-#exitloop	LDA	b
-#	STO	ten
-#
-#	BR	subhun
-#	
-#
-#
 ###################		VARIABLES
 
 
@@ -152,23 +135,17 @@ nine	DAT	009
 ten	DAT	010
 hun	DAT	100
 
-
+count	DAT	0
 hundreds	DAT	
 tens	DAT
 units	DAT
 
-outputbool	DAT	0
-
 n	DAT
-a	DAT
 b	DAT
 
 temp	DAT
 
 nnn	DAT	999
-
-
-
 
 
 
