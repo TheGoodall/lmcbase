@@ -2,10 +2,6 @@
 # BR, BRZ, BRP, IN, OUT, DAT
 
 
-# Design choices:
-
-#1. Due to mailbox shortages, I will asume that the inputs are valid, in the base that they claim to be, however I will not assume that they are convertable by my program
-
 ####################		TAKING INPUTS AND RESETTING VALUES
 
 	IN #n
@@ -48,6 +44,7 @@ stten	LDA	temp
 ###################  CONVERTING TO BASE 10
 	IN #a
 	STO	temp
+	BRZ	error
 
 
 addhun	LDA	hundreds
@@ -64,19 +61,20 @@ addten	LDA	tens
 	SUB	one
 	STO	tens
 	LDA	units
-	ADD	temp
 	STO	b
-	SUB	units
+	ADD	temp
+	STO	units
+	SUB	b
 	BRP	addtencont
 	BR	error
-addtencont	LDA	b
-	STO	units
-	BR	addten
+addtencont	BR	addten
+
 
 ###################	CONVERT FROM 10 TO B
 
 ###### find b^2
 next	IN #b
+	BRZ	error
 	STO	b
 	STO	temp
 	SUB	one
@@ -146,6 +144,12 @@ b	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
+
+
 
 
 
