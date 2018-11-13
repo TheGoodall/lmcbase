@@ -2,7 +2,9 @@
 # BR, BRZ, BRP, IN, OUT, DAT
 
 #Base of input can be anything and input does not have to be in that base, program will treat input as if it is in that base e.g. in base 4, 55 is (5*1)+(5*4)
-#Base of output must be between 2 and 10
+#Base of output must be between 2 and 10 inclusive
+#all other entries will cause 999 to be outputted
+#
 
 ####################		TAKING INPUTS AND RESETTING VALUES
 
@@ -46,13 +48,8 @@ stten	LDA	temp
 ###################  CONVERTING TO BASE 10
 	IN #a
 	STO	temp
+#only base 0 check
 	BRZ	error
-# Base 0 check implemented but base 1 or >base 10 not
-# due to lack of mailboxes
-#	SUB	one
-#	BRZ	error
-#	SUB	ten
-#	BRP	error
 
 
 addhun	LDA	hundreds
@@ -73,9 +70,14 @@ addten	LDA	tens
 	ADD	temp
 	STO	units
 	SUB	b
-	BRP	addtencont
-	BR	error
-addtencont	BR	addten
+	BRP	addten
+#	BR	error
+
+##################		ERROR
+
+error	LDA	nnn
+	OUT
+one	DAT	001
 
 
 ###################	CONVERT FROM 10 TO B
@@ -87,10 +89,11 @@ next	IN #b
 	STO	temp
 	BRZ	error
 	STO	count
-#	SUB	one
-#	BRZ
-#	SUB	ten
-#	BRP	error
+# Base 0 and base >10 and base 1 check 
+	SUB	one
+	BRZ	error
+	SUB	ten
+	BRP	error
 
 bsqcalc	LDA	count
 	SUB	one
@@ -140,7 +143,7 @@ ten	DAT	010
 
 hun	DAT	100
 
-count	DAT	0
+count	DAT	
 hundreds	DAT	
 tens	DAT
 units	DAT
@@ -154,11 +157,14 @@ nnn	DAT	999
 
 
 
-##################		ERROR
 
-error	LDA	nnn
-	OUT
-one	DAT	001
+
+
+
+
+
+
+
 
 
 
