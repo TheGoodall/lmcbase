@@ -97,8 +97,8 @@ next	IN #b
 
 bsqcalc	LDA	count
 	SUB	one
-	BRZ	stbsq
 	STO	count
+	BRZ	stbsq
 	LDA	temp
 	ADD	b
 	STO	temp
@@ -129,7 +129,7 @@ stb	LDA	units
 	BRP	subb
 	LDA	units
 	ADD	n
-	OUT
+	OUT	
 
 ten	DAT	010
 	
@@ -154,6 +154,10 @@ b	DAT
 temp	DAT
 
 nnn	DAT	999
+
+
+
+
 
 
 
