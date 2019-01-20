@@ -1,0 +1,176 @@
+# HLT, ADD, SUB, STO, LDA,
+# BR, BRZ, BRP, IN, OUT, DAT
+
+#Base of input can be anything and input does not have to be in that base, program will treat input as if it is in that base e.g. in base 4, 55 is (5*1)+(5*4)
+#Base of output must be between 2 and 10 inclusive
+#all other entries will cause 999 to be outputted
+#
+
+####################		TAKING INPUTS AND RESETTING VALUES
+
+	IN #n
+
+	STO	temp
+
+	SUB	temp
+	STO	hundreds
+	STO	tens
+	STO	units
+	STO	n
+	BR	sthun
+
+
+####################		SEPERATING DIGITS
+
+
+subhun	STO 	temp
+	LDA	hundreds
+	ADD	one
+	STO	hundreds
+sthun	LDA	temp
+	SUB	hun
+	BRP	subhun
+	BR	stten
+
+subten	STO 	temp
+	LDA	tens
+	ADD	one
+	STO	tens
+stten	LDA	temp
+	SUB	ten
+	BRP	subten
+	LDA	temp
+	STO	units
+
+
+	
+
+###################  CONVERTING TO BASE 10
+	IN #a
+	STO	temp
+#only base 0 check
+	BRZ	error
+
+
+addhun	LDA	hundreds
+	BRZ	addten
+	SUB	one
+	STO	hundreds
+	LDA	tens
+	ADD	temp
+	STO	tens
+	BR	addhun
+
+addten	LDA	tens
+	BRZ	next
+	SUB	one
+	STO	tens
+	LDA	units
+	STO	b
+	ADD	temp
+	STO	units
+	SUB	b
+	BRP	addten
+#	BR	error
+
+##################		ERROR
+
+error	LDA	nnn
+	OUT
+one	DAT	001
+
+
+###################	CONVERT FROM 10 TO B
+
+###### find b^2
+next	IN #b
+	BRZ	error
+	STO	b
+	STO	temp
+	BRZ	error
+	STO	count
+# Base 0 and base >10 and base 1 check 
+	SUB	one
+	BRZ	error
+	SUB	ten
+	BRP	error
+
+bsqcalc	LDA	count
+	SUB	one
+	STO	count
+	BRZ	stbsq
+	LDA	temp
+	ADD	b
+	STO	temp
+	BR	bsqcalc
+
+#### Actual conversion
+
+subbsq	STO 	units
+	LDA	n
+	ADD	hun
+	STO	n
+	LDA	count
+	ADD	one
+	STO	count
+	SUB	b
+	BRZ	error
+stbsq	LDA	units
+	SUB	temp
+	BRP	subbsq
+	BR	stb
+
+subb	STO 	units
+	LDA	n
+	ADD	ten
+	STO	n
+stb	LDA	units
+	SUB	b
+	BRP	subb
+	LDA	units
+	ADD	n
+	OUT	
+
+ten	DAT	010
+	
+
+
+###################		VARIABLES
+
+
+
+
+
+hun	DAT	100
+
+count	DAT	
+hundreds	DAT	
+tens	DAT
+units	DAT
+
+n	DAT
+b	DAT
+
+temp	DAT
+
+nnn	DAT	999
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

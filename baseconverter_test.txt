@@ -1,0 +1,505 @@
+Into base 10;223,6,10;87;2000
+Into base 10;132,9,10;110;2000
+Into base 10;882,9,10;722;2000
+Into base 10;335,9,10;275;2000
+Into base 10;716,9,10;582;2000
+Into base 10;366,8,10;246;2000
+Into base 10;271,8,10;185;2000
+Into base 10;777,9,10;637;2000
+Into base 10;32,7,10;23;2000
+Into base 10;205,6,10;77;2000
+Into base 10;213,5,10;58;2000
+Into base 10;153,7,10;87;2000
+Into base 10;36,8,10;30;2000
+Into base 10;805,9,10;653;2000
+Into base 10;223,4,10;43;2000
+Into base 10;117,9,10;97;2000
+Into base 10;427,8,10;279;2000
+Into base 10;531,8,10;345;2000
+Into base 10;113,9,10;93;2000
+Into base 10;126,7,10;69;2000
+Into base 10;341,9,10;280;2000
+Into base 10;750,9,10;612;2000
+Into base 10;543,6,10;207;2000
+Into base 10;535,8,10;349;2000
+Into base 10;540,8,10;352;2000
+Into base 10;376,9,10;312;2000
+Into base 10;610,9,10;495;2000
+Into base 10;260,8,10;176;2000
+Into base 10;110,3,10;12;2000
+Into base 10;371,8,10;249;2000
+Into base 10;580,9,10;477;2000
+Into base 10;664,7,10;340;2000
+Into base 10;66,7,10;48;2000
+Into base 10;705,8,10;453;2000
+Into base 10;168,9,10;143;2000
+Into base 10;24,5,10;14;2000
+Into base 10;438,9,10;359;2000
+Into base 10;773,8,10;507;2000
+Into base 10;484,9,10;400;2000
+Into base 10;462,9,10;380;2000
+Into base 10;522,7,10;261;2000
+Into base 10;142,7,10;79;2000
+Into base 10;30,5,10;15;2000
+Into base 10;314,5,10;84;2000
+Into base 10;311,6,10;115;2000
+Into base 10;888,9,10;728;2000
+Into base 10;326,8,10;214;2000
+Into base 10;303,4,10;51;2000
+Into base 10;0,5,10;0;2000
+Into base 10;115,6,10;47;2000
+Into base 10;577,8,10;383;2000
+Into base 10;2,7,10;2;2000
+Into base 10;4,9,10;4;2000
+Into base 10;234,5,10;69;2000
+Into base 10;572,9,10;470;2000
+Into base 10;60,7,10;42;2000
+Out of base 10;182,10,6;502;2000
+Out of base 10;168,10,9;206;2000
+Out of base 10;163,10,6;431;2000
+Out of base 10;79,10,7;142;2000
+Out of base 10;76,10,9;84;2000
+Out of base 10;530,10,9;648;2000
+Out of base 10;48,10,6;120;2000
+Out of base 10;62,10,9;68;2000
+Out of base 10;685,10,9;841;2000
+Out of base 10;315,10,9;380;2000
+Out of base 10;6,10,3;20;2000
+Out of base 10;515,10,9;632;2000
+Out of base 10;502,10,8;766;2000
+Out of base 10;433,10,8;661;2000
+Out of base 10;188,10,7;356;2000
+Out of base 10;68,10,7;125;2000
+Out of base 10;501,10,8;765;2000
+Out of base 10;111,10,7;216;2000
+Out of base 10;20,10,4;110;2000
+Out of base 10;376,10,8;570;2000
+Out of base 10;3,10,6;3;2000
+Out of base 10;173,10,9;212;2000
+Out of base 10;201,10,9;243;2000
+Out of base 10;295,10,7;601;2000
+Out of base 10;105,10,8;151;2000
+Out of base 10;665,10,9;818;2000
+Out of base 10;98,10,5;343;2000
+Out of base 10;173,10,8;255;2000
+Out of base 10;156,10,9;183;2000
+Out of base 10;5,10,6;5;2000
+Out of base 10;106,10,7;211;2000
+Out of base 10;613,10,9;751;2000
+Out of base 10;0,10,8;0;2000
+Out of base 10;190,10,8;276;2000
+Out of base 10;1,10,4;1;2000
+Out of base 10;137,10,6;345;2000
+Out of base 10;98,10,8;142;2000
+Out of base 10;571,10,9;704;2000
+Out of base 10;464,10,8;720;2000
+Out of base 10;219,10,8;333;2000
+Out of base 10;247,10,8;367;2000
+Out of base 10;226,10,8;342;2000
+Out of base 10;280,10,8;430;2000
+Out of base 10;459,10,8;713;2000
+Out of base 10;335,10,8;517;2000
+Out of base 10;23,10,3;212;2000
+Out of base 10;400,10,9;484;2000
+Out of base 10;143,10,8;217;2000
+Out of base 10;225,10,7;441;2000
+Out of base 10;94,10,7;163;2000
+Out of base 10;98,10,6;242;2000
+Out of base 10;331,10,8;513;2000
+Out of base 10;331,10,7;652;2000
+Out of base 10;321,10,7;636;2000
+Out of base 10;55,10,8;67;2000
+Out of base 10;63,10,6;143;2000
+Between bases;376,8,7;512;2000
+Between bases;61,7,4;223;2000
+Between bases;541,6,8;315;2000
+Between bases;506,7,8;373;2000
+Between bases;352,7,8;270;2000
+Between bases;653,7,8;514;2000
+Between bases;431,8,7;551;2000
+Between bases;62,9,4;320;2000
+Between bases;283,9,8;355;2000
+Between bases;254,6,8;152;2000
+Between bases;230,4,5;134;2000
+Between bases;251,8,6;441;2000
+Between bases;22,7,3;121;2000
+Between bases;354,7,9;226;2000
+Between bases;152,9,7;242;2000
+Between bases;315,6,8;167;2000
+Between bases;331,4,9;67;2000
+Between bases;5,9,2;101;2000
+Between bases;403,5,8;147;2000
+Between bases;44,6,8;34;2000
+Between bases;603,7,9;360;2000
+Between bases;155,7,9;108;2000
+Between bases;153,7,8;127;2000
+Between bases;323,7,6;432;2000
+Between bases;150,8,7;206;2000
+Between bases;314,7,6;422;2000
+Between bases;132,8,6;230;2000
+Between bases;220,5,6;140;2000
+Between bases;34,7,8;31;2000
+Between bases;118,9,8;142;2000
+Between bases;107,8,7;131;2000
+Between bases;333,5,8;135;2000
+Between bases;232,8,7;310;2000
+Between bases;52,7,4;211;2000
+Between bases;46,7,5;114;2000
+Between bases;620,9,8;770;2000
+Between bases;215,7,6;302;2000
+Between bases;51,9,7;64;2000
+Between bases;120,6,9;53;2000
+Between bases;130,8,5;323;2000
+Between bases;205,6,8;115;2000
+Between bases;1,6,7;1;2000
+Between bases;3,6,4;3;2000
+Between bases;73,8,5;214;2000
+Between bases;184,9,8;235;2000
+Between bases;470,8,7;624;2000
+Between bases;642,7,9;400;2000
+Between bases;116,8,9;86;2000
+Between bases;36,7,9;30;2000
+Between bases;77,8,5;223;2000
+Between bases;473,8,9;380;2000
+Between bases;445,8,7;566;2000
+Between bases;36,9,7;45;2000
+Between bases;14,5,6;13;2000
+Between bases;11,2,3;10;2000
+Between bases;271,8,6;505;2000
+Overflow;14,9,2;999;2000
+Overflow;336,8,4;999;2000
+Overflow;716,9,2;999;2000
+Overflow;993,10,7;999;2000
+Overflow;946,10,2;999;2000
+Overflow;431,9,3;999;2000
+Overflow;562,8,5;999;2000
+Overflow;118,10,3;999;2000
+Overflow;545,7,3;999;2000
+Overflow;651,7,2;999;2000
+Overflow;898,10,9;999;2000
+Overflow;367,10,7;999;2000
+Overflow;626,8,5;999;2000
+Overflow;381,10,5;999;2000
+Overflow;532,8,5;999;2000
+Overflow;703,8,7;999;2000
+Overflow;339,10,6;999;2000
+Overflow;873,10,8;999;2000
+Overflow;575,9,3;999;2000
+Overflow;945,10,8;999;2000
+Overflow;885,10,5;999;2000
+Overflow;703,8,2;999;2000
+Overflow;273,10,5;999;2000
+Overflow;944,10,3;999;2000
+Overflow;453,6,5;999;2000
+Overflow;842,9,6;999;2000
+Overflow;666,8,6;999;2000
+Overflow;553,6,5;999;2000
+Overflow;906,10,6;999;2000
+Overflow;356,10,4;999;2000
+Overflow;290,10,2;999;2000
+Overflow;939,10,3;999;2000
+Overflow;617,10,4;999;2000
+Overflow;841,9,2;999;2000
+Overflow;494,10,6;999;2000
+Overflow;443,8,4;999;2000
+Overflow;383,9,3;999;2000
+Overflow;112,8,4;999;2000
+Overflow;681,10,8;999;2000
+Overflow;413,8,2;999;2000
+Overflow;854,9,7;999;2000
+Overflow;250,10,4;999;2000
+Overflow;542,6,3;999;2000
+Overflow;477,10,6;999;2000
+Overflow;754,9,3;999;2000
+Overflow;620,7,6;999;2000
+Overflow;631,10,5;999;2000
+Overflow;812,9,2;999;2000
+Overflow;151,6,3;999;2000
+Overflow;58,10,3;999;2000
+Overflow;758,10,6;999;2000
+Overflow;520,9,5;999;2000
+Overflow;805,9,5;999;2000
+Overflow;757,10,2;999;2000
+Overflow;553,8,5;999;2000
+Overflow;588,9,3;999;2000
+Invalid numbers;732,0,10;999;2000
+Invalid numbers;235,0,10;999;2000
+Invalid numbers;108,4,10;999;2000
+Invalid numbers;676,3,10;999;2000
+Invalid numbers;832,5,10;999;2000
+Invalid numbers;107,1,10;999;2000
+Invalid numbers;232,0,10;999;2000
+Invalid numbers;239,1,10;999;2000
+Invalid numbers;907,0,10;999;2000
+Invalid numbers;816,0,10;999;2000
+Invalid numbers;557,0,10;999;2000
+Invalid numbers;893,0,10;999;2000
+Invalid numbers;793,7,10;999;2000
+Invalid numbers;121,2,10;999;2000
+Invalid numbers;510,0,10;999;2000
+Invalid numbers;699,6,10;999;2000
+Invalid numbers;739,2,10;999;2000
+Invalid numbers;650,3,10;999;2000
+Invalid numbers;287,3,10;999;2000
+Invalid numbers;151,1,10;999;2000
+Invalid numbers;831,0,10;999;2000
+Invalid numbers;74,2,10;999;2000
+Reset test;555,6,7;;150
+Invalid numbers;700,7,10;999;2000
+Invalid numbers;55,0,10;999;2000
+Invalid numbers;192,0,10;999;2000
+Invalid numbers;104,0,10;999;2000
+Invalid numbers;127,0,10;999;2000
+Invalid numbers;587,1,10;999;2000
+Invalid numbers;471,5,10;999;2000
+Invalid numbers;212,0,10;999;2000
+Invalid numbers;623,2,10;999;2000
+Invalid numbers;19,0,10;999;2000
+Invalid numbers;653,3,10;999;2000
+Invalid numbers;987,3,10;999;2000
+Invalid numbers;394,1,10;999;2000
+Invalid numbers;661,0,10;999;2000
+Invalid numbers;687,5,10;999;2000
+Invalid numbers;706,7,10;999;2000
+Invalid numbers;490,0,10;999;2000
+Invalid numbers;784,6,10;999;2000
+Invalid numbers;575,0,10;999;2000
+Invalid numbers;435,0,10;999;2000
+Invalid numbers;850,0,10;999;2000
+Invalid numbers;288,1,10;999;2000
+Invalid numbers;862,1,10;999;2000
+Invalid numbers;702,0,10;999;2000
+Invalid numbers;672,2,10;999;2000
+Invalid numbers;658,1,10;999;2000
+Invalid numbers;198,5,10;999;2000
+Invalid numbers;134,3,10;999;2000
+Invalid numbers;188,0,10;999;2000
+Invalid numbers;106,1,10;999;2000
+Invalid numbers;915,6,10;999;2000
+Invalid numbers;874,4,10;999;2000
+Invalid numbers;396,0,10;999;2000
+Invalid numbers;893,0,10;999;2000
+Into base 0 and 1;151,10,1;999;2000
+Into base 0 and 1;2,10,0;999;2000
+Into base 0 and 1;484,10,1;999;2000
+Into base 0 and 1;876,10,1;999;2000
+Into base 0 and 1;365,10,0;999;2000
+Into base 0 and 1;112,10,0;999;2000
+Into base 0 and 1;4,10,1;999;2000
+Into base 0 and 1;879,10,1;999;2000
+Into base 0 and 1;818,10,0;999;2000
+Into base 0 and 1;913,10,0;999;2000
+Into base 0 and 1;464,10,0;999;2000
+Into base 0 and 1;66,10,0;999;2000
+Into base 0 and 1;662,10,1;999;2000
+Into base 0 and 1;68,10,0;999;2000
+Into base 0 and 1;584,10,1;999;2000
+Into base 0 and 1;907,10,1;999;2000
+Into base 0 and 1;231,10,1;999;2000
+Into base 0 and 1;364,10,1;999;2000
+Into base 0 and 1;320,10,0;999;2000
+Into base 0 and 1;479,10,1;999;2000
+Into base 0 and 1;319,10,0;999;2000
+Into base 0 and 1;26,10,1;999;2000
+Into base 0 and 1;191,10,1;999;2000
+Into base 0 and 1;894,10,0;999;2000
+Into base 0 and 1;111,10,1;999;2000
+Into base 0 and 1;902,10,0;999;2000
+Into base 0 and 1;561,10,0;999;2000
+Into base 0 and 1;782,10,0;999;2000
+Into base 0 and 1;82,10,0;999;2000
+Into base 0 and 1;606,10,0;999;2000
+Into base 0 and 1;162,10,1;999;2000
+Into base 0 and 1;142,10,0;999;2000
+Into base 0 and 1;861,10,1;999;2000
+Into base 0 and 1;917,10,1;999;2000
+Into base 0 and 1;670,10,1;999;2000
+Into base 0 and 1;411,10,1;999;2000
+Into base 0 and 1;852,10,1;999;2000
+Into base 0 and 1;474,10,1;999;2000
+Into base 0 and 1;640,10,0;999;2000
+Into base 0 and 1;892,10,0;999;2000
+Into base 0 and 1;473,10,1;999;2000
+Into base 0 and 1;278,10,1;999;2000
+Into base 0 and 1;518,10,0;999;2000
+Into base 0 and 1;147,10,0;999;2000
+Into base 0 and 1;250,10,0;999;2000
+Into base 0 and 1;174,10,0;999;2000
+Into base 0 and 1;896,10,0;999;2000
+Into base 0 and 1;323,10,1;999;2000
+Into base 0 and 1;28,10,1;999;2000
+Into base 0 and 1;673,10,0;999;2000
+Into base 0 and 1;340,10,0;999;2000
+Into base 0 and 1;694,10,1;999;2000
+Into base 0 and 1;591,10,1;999;2000
+Into base 0 and 1;636,10,0;999;2000
+Into base 0 and 1;884,10,0;999;2000
+Into base 0 and 1;575,10,0;999;2000
+Out of base 0 and 1;982,0,10;999;2000
+Out of base 0 and 1;827,0,10;999;2000
+Out of base 0 and 1;383,0,10;999;2000
+Out of base 0 and 1;315,0,10;999;2000
+Out of base 0 and 1;977,1,10;999;2000
+Out of base 0 and 1;107,0,10;999;2000
+Out of base 0 and 1;148,1,10;999;2000
+Out of base 0 and 1;141,0,10;999;2000
+Out of base 0 and 1;884,0,10;999;2000
+Out of base 0 and 1;677,0,10;999;2000
+Out of base 0 and 1;640,1,10;999;2000
+Out of base 0 and 1;620,1,10;999;2000
+Out of base 0 and 1;187,1,10;999;2000
+Out of base 0 and 1;824,0,10;999;2000
+Out of base 0 and 1;806,0,10;999;2000
+Out of base 0 and 1;459,0,10;999;2000
+Out of base 0 and 1;810,1,10;999;2000
+Out of base 0 and 1;563,0,10;999;2000
+Out of base 0 and 1;620,1,10;999;2000
+Out of base 0 and 1;769,1,10;999;2000
+Out of base 0 and 1;64,0,10;999;2000
+Out of base 0 and 1;84,1,10;999;2000
+Out of base 0 and 1;166,0,10;999;2000
+Out of base 0 and 1;655,0,10;999;2000
+Out of base 0 and 1;148,0,10;999;2000
+Out of base 0 and 1;602,0,10;999;2000
+Out of base 0 and 1;342,1,10;999;2000
+Out of base 0 and 1;130,0,10;999;2000
+Out of base 0 and 1;681,1,10;999;2000
+Out of base 0 and 1;813,1,10;999;2000
+Out of base 0 and 1;441,1,10;999;2000
+Out of base 0 and 1;482,1,10;999;2000
+Out of base 0 and 1;983,1,10;999;2000
+Out of base 0 and 1;953,0,10;999;2000
+Out of base 0 and 1;652,0,10;999;2000
+Out of base 0 and 1;90,0,10;999;2000
+Out of base 0 and 1;292,1,10;999;2000
+Out of base 0 and 1;235,1,10;999;2000
+Out of base 0 and 1;262,0,10;999;2000
+Out of base 0 and 1;812,0,10;999;2000
+Out of base 0 and 1;545,1,10;999;2000
+Out of base 0 and 1;501,0,10;999;2000
+Out of base 0 and 1;798,0,10;999;2000
+Out of base 0 and 1;939,1,10;999;2000
+Out of base 0 and 1;699,1,10;999;2000
+Out of base 0 and 1;930,1,10;999;2000
+Out of base 0 and 1;157,0,10;999;2000
+Out of base 0 and 1;779,1,10;999;2000
+Out of base 0 and 1;929,1,10;999;2000
+Out of base 0 and 1;69,0,10;999;2000
+Out of base 0 and 1;335,1,10;999;2000
+Out of base 0 and 1;207,0,10;999;2000
+Out of base 0 and 1;777,1,10;999;2000
+Out of base 0 and 1;750,1,10;999;2000
+Out of base 0 and 1;799,0,10;999;2000
+Out of base 0 and 1;891,0,10;999;2000
+Into base greater than 10;90,10,49;999;2000
+Into base greater than 10;649,10,76;999;2000
+Into base greater than 10;881,10,57;999;2000
+Into base greater than 10;844,10,23;999;2000
+Into base greater than 10;180,10,64;999;2000
+Into base greater than 10;577,10,72;999;2000
+Into base greater than 10;885,10,90;999;2000
+Into base greater than 10;14,10,63;999;2000
+Into base greater than 10;868,10,48;999;2000
+Into base greater than 10;510,10,85;999;2000
+Into base greater than 10;276,10,51;999;2000
+Into base greater than 10;918,10,51;999;2000
+Into base greater than 10;699,10,31;999;2000
+Into base greater than 10;576,10,45;999;2000
+Into base greater than 10;566,10,11;999;2000
+Into base greater than 10;864,10,83;999;2000
+Into base greater than 10;884,10,22;999;2000
+Into base greater than 10;548,10,15;999;2000
+Into base greater than 10;630,10,91;999;2000
+Into base greater than 10;407,10,90;999;2000
+Into base greater than 10;735,10,26;999;2000
+Into base greater than 10;560,10,64;999;2000
+Into base greater than 10;414,10,65;999;2000
+Into base greater than 10;204,10,65;999;2000
+Into base greater than 10;428,10,65;999;2000
+Into base greater than 10;896,10,75;999;2000
+Into base greater than 10;212,10,27;999;2000
+Into base greater than 10;894,10,15;999;2000
+Into base greater than 10;622,10,92;999;2000
+Into base greater than 10;369,10,20;999;2000
+Into base greater than 10;631,10,42;999;2000
+Into base greater than 10;675,10,74;999;2000
+Into base greater than 10;831,10,76;999;2000
+Into base greater than 10;681,10,37;999;2000
+Into base greater than 10;74,10,73;999;2000
+Into base greater than 10;122,10,69;999;2000
+Into base greater than 10;500,10,30;999;2000
+Into base greater than 10;528,10,62;999;2000
+Into base greater than 10;768,10,89;999;2000
+Into base greater than 10;571,10,17;999;2000
+Into base greater than 10;624,10,76;999;2000
+Into base greater than 10;777,10,89;999;2000
+Into base greater than 10;619,10,35;999;2000
+Into base greater than 10;841,10,89;999;2000
+Into base greater than 10;798,10,87;999;2000
+Into base greater than 10;145,10,76;999;2000
+Into base greater than 10;252,10,80;999;2000
+Into base greater than 10;94,10,30;999;2000
+Into base greater than 10;64,10,93;999;2000
+Into base greater than 10;336,10,57;999;2000
+Into base greater than 10;406,10,33;999;2000
+Into base greater than 10;377,10,94;999;2000
+Into base greater than 10;122,10,39;999;2000
+Into base greater than 10;758,10,81;999;2000
+Into base greater than 10;487,10,99;999;2000
+Into base greater than 10;458,10,66;999;2000
+Out of base greater than 10;725,67,10;999;2000
+Out of base greater than 10;513,96,10;999;2000
+Out of base greater than 10;149,12,10;999;2000
+Out of base greater than 10;653,52,10;999;2000
+Out of base greater than 10;109,97,10;999;2000
+Out of base greater than 10;400,49,10;999;2000
+Out of base greater than 10;756,62,10;999;2000
+Out of base greater than 10;2,31,10;999;2000
+Out of base greater than 10;723,49,10;999;2000
+Out of base greater than 10;370,24,10;999;2000
+Out of base greater than 10;506,85,10;999;2000
+Out of base greater than 10;934,57,10;999;2000
+Out of base greater than 10;414,95,10;999;2000
+Out of base greater than 10;399,83,10;999;2000
+Out of base greater than 10;938,48,10;999;2000
+Out of base greater than 10;603,40,10;999;2000
+Out of base greater than 10;637,18,10;999;2000
+Out of base greater than 10;791,96,10;999;2000
+Out of base greater than 10;262,23,10;999;2000
+Out of base greater than 10;314,16,10;999;2000
+Out of base greater than 10;841,67,10;999;2000
+Out of base greater than 10;947,92,10;999;2000
+Out of base greater than 10;448,42,10;999;2000
+Out of base greater than 10;874,23,10;999;2000
+Out of base greater than 10;170,89,10;999;2000
+Out of base greater than 10;219,33,10;999;2000
+Out of base greater than 10;547,28,10;999;2000
+Out of base greater than 10;696,70,10;999;2000
+Out of base greater than 10;217,96,10;999;2000
+Out of base greater than 10;237,73,10;999;2000
+Out of base greater than 10;859,76,10;999;2000
+Out of base greater than 10;432,97,10;999;2000
+Out of base greater than 10;877,25,10;999;2000
+Out of base greater than 10;468,54,10;999;2000
+Out of base greater than 10;741,94,10;999;2000
+Out of base greater than 10;67,72,10;999;2000
+Out of base greater than 10;415,91,10;999;2000
+Out of base greater than 10;493,48,10;999;2000
+Out of base greater than 10;936,47,10;999;2000
+Out of base greater than 10;608,54,10;999;2000
+Out of base greater than 10;474,14,10;999;2000
+Out of base greater than 10;571,30,10;999;2000
+Out of base greater than 10;837,72,10;999;2000
+Out of base greater than 10;722,95,10;999;2000
+Out of base greater than 10;780,76,10;999;2000
+Out of base greater than 10;670,32,10;999;2000
+Out of base greater than 10;645,86,10;999;2000
+Out of base greater than 10;353,62,10;999;2000
+Out of base greater than 10;426,26,10;999;2000
+Out of base greater than 10;130,11,10;999;2000
+Out of base greater than 10;181,40,10;999;2000
+Out of base greater than 10;255,60,10;999;2000
+Out of base greater than 10;23,87,10;999;2000
+Out of base greater than 10;227,78,10;999;2000
+Out of base greater than 10;325,44,10;999;2000
+Out of base greater than 10;244,83,10;999;2000
